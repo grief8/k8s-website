@@ -44,11 +44,11 @@
     - hostPID
     - hostIPC
     - shareProcessNamespace
-  - name: Service account
+  - name: Service account *half-sensitive*
     fields:
     - serviceAccountName
     - automountServiceAccountToken
-  - name: Security context
+  - name: Security context *half-sensitive*
     fields:
     - securityContext
   - name: Alpha level
@@ -60,7 +60,7 @@
     fields:
     - serviceAccount
 
-- definition: io.k8s.api.core.v1.PodSecurityContext
+- definition: io.k8s.api.core.v1.PodSecurityContext *half-sensitive*
   field_categories:
   - fields:
     - runAsUser
@@ -74,7 +74,7 @@
     - sysctls
     - windowsOptions
 
-- definition: io.k8s.api.core.v1.Toleration
+- definition: io.k8s.api.core.v1.Toleration *half-sensitive*
   field_categories:
   - fields:
     - key
@@ -83,7 +83,7 @@
     - effect
     - tolerationSeconds
 
-- definition: io.k8s.api.core.v1.PodStatus
+- definition: io.k8s.api.core.v1.PodStatus *non-sensitive*
   field_categories:
   - fields:
     - nominatedNodeName
@@ -228,7 +228,7 @@
     - stdin
     - stdinOnce
     - tty
-  - name: Security context
+  - name: Security context *half-sensitive*
     fields:
     - securityContext
   - name: Not allowed
