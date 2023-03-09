@@ -100,7 +100,7 @@
     - containerStatuses
     - ephemeralContainerStatuses
 
-- definition: io.k8s.api.core.v1.Container
+- definition: io.k8s.api.core.v1.Container *half-sensitive*
   field_categories:
   - fields:
     - name
@@ -144,7 +144,7 @@
     - stdinOnce
     - tty
 
-- definition: io.k8s.api.core.v1.Probe
+- definition: io.k8s.api.core.v1.Probe *half-sensitive*
   field_categories:
   - fields:
     - exec

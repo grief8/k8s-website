@@ -27,7 +27,7 @@ parts:
     - NodeAffinity
     - PodAffinity
     - PodAntiAffinity
-    - Probe
+    - Probe *half-sensitive*
     - PodStatus
     - PodList
   - name: PodTemplate
