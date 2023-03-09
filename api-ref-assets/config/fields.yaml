@@ -158,7 +158,7 @@
     - successThreshold
     - grpc
 
-- definition: io.k8s.api.core.v1.SecurityContext
+- definition: io.k8s.api.core.v1.SecurityContext *half-sensitive*
   field_categories:
   - fields:
     - runAsUser
@@ -173,7 +173,7 @@
     - seLinuxOptions
     - windowsOptions
 
-- definition: io.k8s.api.core.v1.ContainerStatus
+- definition: io.k8s.api.core.v1.ContainerStatus *half-sensitive*
   field_categories:
   - fields:
     - name
@@ -186,18 +186,18 @@
     - restartCount
     - started
 
-- definition: io.k8s.api.core.v1.ContainerStateTerminated
+- definition: io.k8s.api.core.v1.ContainerStateTerminated *half-sensitive*
   field_categories:
   - fields:
     - containerID
     - exitCode
     - startedAt
     - finishedAt
-    - message
-    - reason
+    - message *sensitive*
+    - reason *sensitive*
     - signal
 
-- definition: io.k8s.api.core.v1.EphemeralContainer
+- definition: io.k8s.api.core.v1.EphemeralContainer *half-sensitive*
   field_categories:
   - fields:
     - name
