@@ -240,7 +240,7 @@
     - readinessProbe
     - startupProbe
 
-- definition: io.k8s.api.core.v1.ReplicationControllerSpec
+- definition: io.k8s.api.core.v1.ReplicationControllerSpec *half-sensitive*
   field_categories:
   - fields:
     - selector
@@ -248,7 +248,7 @@
     - replicas
     - minReadySeconds
 
-- definition: io.k8s.api.core.v1.ReplicationControllerStatus
+- definition: io.k8s.api.core.v1.ReplicationControllerStatus *half-sensitive*
   field_categories:
   - fields:
     - replicas
@@ -258,7 +258,7 @@
     - conditions
     - observedGeneration
 
-- definition: io.k8s.api.apps.v1.ReplicaSetSpec
+- definition: io.k8s.api.apps.v1.ReplicaSetSpec *half-sensitive*
   field_categories:
   - fields:
     - selector
@@ -266,7 +266,7 @@
     - replicas
     - minReadySeconds
 
-- definition: io.k8s.api.apps.v1.ReplicaSetStatus
+- definition: io.k8s.api.apps.v1.ReplicaSetStatus *half-sensitive*
   field_categories:
   - fields:
     - replicas
