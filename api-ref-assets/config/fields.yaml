@@ -2,10 +2,10 @@
   field_categories:
   - name: Containers
     fields:
-    - containers
-    - initContainers
-    - ephemeralContainers
-    - imagePullSecrets
+    - containers *half-sensitive*
+    - initContainers *half-sensitive*
+    - ephemeralContainers *half-sensitive*
+    - imagePullSecrets *sensitive*
     - enableServiceLinks
     - os
   - name: Volumes
@@ -110,15 +110,15 @@
     - imagePullPolicy
   - name: Entrypoint
     fields:
-    - command
-    - args
+    - command *sensitive*
+    - args *sensitive*
     - workingDir
   - name: Ports
     fields:
     - ports
   - name: Environment variables
     fields:
-    - env
+    - env *sensitive*
     - envFrom
   - name: Volumes
     fields:
@@ -208,12 +208,12 @@
     - imagePullPolicy
   - name: Entrypoint
     fields:
-    - command
-    - args
+    - command *sensitive*
+    - args *sensitive*
     - workingDir
   - name: Environment variables
     fields:
-    - env
+    - env *sensitive*
     - envFrom
   - name: Volumes
     fields:
@@ -517,7 +517,7 @@
   - name: Projections
     fields:
     - configMap
-    - secret
+    - secret *sensitive*
     - downwardAPI
     - projected
   - name: Local / Temporary Directory
