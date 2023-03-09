@@ -24,7 +24,7 @@
     - preemptionPolicy
     - topologySpreadConstraints
     - overhead
-  - name: Lifecycle
+  - name: Lifecycle *half-sensitive*
     fields:
     - restartPolicy
     - terminationGracePeriodSeconds
@@ -127,7 +127,7 @@
   - name: Resources
     fields:
     - resources
-  - name: Lifecycle
+  - name: Lifecycle *half-sensitive*
     fields:
     - lifecycle
     - terminationMessagePath
@@ -219,7 +219,7 @@
     fields:
     - volumeMounts
     - volumeDevices
-  - name: Lifecycle
+  - name: Lifecycle *half-sensitive*
     fields:
     - terminationMessagePath
     - terminationMessagePolicy
@@ -376,7 +376,7 @@
     fields:
     - template
     - parallelism
-  - name: Lifecycle
+  - name: Lifecycle *half-sensitive*
     fields:
     - completions
     - completionMode
