@@ -370,7 +370,7 @@
     - conditions
     - observedGeneration
 
-- definition: io.k8s.api.batch.v1.JobSpec
+- definition: io.k8s.api.batch.v1.JobSpec *half-sensitive*
   field_categories:
   - name: Replicas
     fields:
@@ -392,7 +392,7 @@
     fields:
     - podFailurePolicy
 
-- definition: io.k8s.api.batch.v1.JobStatus
+- definition: io.k8s.api.batch.v1.JobStatus *half-sensitive*
   field_categories:
   - fields:
     - startTime
@@ -407,7 +407,7 @@
     fields:
     - ready
 
-- definition: io.k8s.api.batch.v1.CronJobSpec
+- definition: io.k8s.api.batch.v1.CronJobSpec *half-sensitive*
   field_categories:
   - fields:
     - jobTemplate
@@ -419,7 +419,7 @@
     - successfulJobsHistoryLimit
     - failedJobsHistoryLimit
 
-- definition: io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerSpec
+- definition: io.k8s.api.autoscaling.v2beta2.HorizontalPodAutoscalerSpec *half-sensitive*
   field_categories:
   - fields:
     - maxReplicas
@@ -428,14 +428,14 @@
     - behavior
     - metrics
 
-- definition: io.k8s.api.autoscaling.v2beta2.HPAScalingPolicy
+- definition: io.k8s.api.autoscaling.v2beta2.HPAScalingPolicy *half-sensitive*
   field_categories:
   - fields:
     - type
     - value
     - periodSeconds
 
-- definition: io.k8s.api.autoscaling.v2.HorizontalPodAutoscalerSpec
+- definition: io.k8s.api.autoscaling.v2.HorizontalPodAutoscalerSpec *half-sensitive*
   field_categories:
   - fields:
     - maxReplicas
@@ -444,14 +444,14 @@
     - behavior
     - metrics
 
-- definition: io.k8s.api.autoscaling.v2.HPAScalingPolicy
+- definition: io.k8s.api.autoscaling.v2.HPAScalingPolicy *half-sensitive*
   field_categories:
   - fields:
     - type
     - value
     - periodSeconds
 
-- definition: io.k8s.api.core.v1.ServiceSpec
+- definition: io.k8s.api.core.v1.ServiceSpec *half-sensitive*
   field_categories:
   - fields:
     - selector
