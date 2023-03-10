@@ -321,13 +321,13 @@
     - persistentVolumeClaimRetentionPolicy
     - ordinals
 
-- definition: io.k8s.api.apps.v1.StatefulSetUpdateStrategy
+- definition: io.k8s.api.apps.v1.StatefulSetUpdateStrategy *half-sensitive*
   field_categories:
   - fields:
     - type
     - rollingUpdate
 
-- definition: io.k8s.api.apps.v1.StatefulSetStatus
+- definition: io.k8s.api.apps.v1.StatefulSetStatus *half-sensitive*
   field_categories:
   - fields:
     - replicas
@@ -341,7 +341,7 @@
     - updateRevision
     - observedGeneration
 
-- definition: io.k8s.api.apps.v1.DaemonSetSpec
+- definition: io.k8s.api.apps.v1.DaemonSetSpec *half-sensitive*
   field_categories:
   - fields:
     - selector
@@ -350,13 +350,13 @@
     - updateStrategy
     - revisionHistoryLimit
 
-- definition: io.k8s.api.apps.v1.DaemonSetUpdateStrategy
+- definition: io.k8s.api.apps.v1.DaemonSetUpdateStrategy *half-sensitive*
   field_categories:
   - fields:
     - type
     - rollingUpdate
 
-- definition: io.k8s.api.apps.v1.DaemonSetStatus
+- definition: io.k8s.api.apps.v1.DaemonSetStatus *half-sensitive*
   field_categories:
   - fields:
     - numberReady
