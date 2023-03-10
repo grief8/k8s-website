@@ -276,7 +276,7 @@
     - conditions
     - observedGeneration
 
-- definition: io.k8s.api.apps.v1.DeploymentSpec
+- definition: io.k8s.api.apps.v1.DeploymentSpec *half-sensitive*
   field_categories:
   - fields:
     - selector
@@ -288,7 +288,7 @@
     - progressDeadlineSeconds
     - paused
 
-- definition: io.k8s.api.apps.v1.DeploymentStatus
+- definition: io.k8s.api.apps.v1.DeploymentStatus *half-sensitive*
   field_categories:
   - fields:
     - replicas
@@ -300,13 +300,13 @@
     - conditions
     - observedGeneration
 
-- definition: io.k8s.api.apps.v1.DeploymentStrategy
+- definition: io.k8s.api.apps.v1.DeploymentStrategy *half-sensitive*
   field_categories:
   - fields:
     - type
     - rollingUpdate
 
-- definition: io.k8s.api.apps.v1.StatefulSetSpec
+- definition: io.k8s.api.apps.v1.StatefulSetSpec *half-sensitive*
   field_categories:
   - fields:
     - serviceName
