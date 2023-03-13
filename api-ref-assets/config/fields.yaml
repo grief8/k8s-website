@@ -574,20 +574,20 @@
     - optional
     - items
 
-- definition: io.k8s.api.core.v1.SecretProjection
+- definition: io.k8s.api.core.v1.SecretProjection *half-sensitive*
   field_categories:
   - fields:
     - name
     - optional
     - items
 
-- definition: io.k8s.api.core.v1.ProjectedVolumeSource
+- definition: io.k8s.api.core.v1.ProjectedVolumeSource *half-sensitive*
   field_categories:
   - fields:
     - defaultMode
     - sources
 
-- definition: io.k8s.api.core.v1.PersistentVolumeClaimSpec
+- definition: io.k8s.api.core.v1.PersistentVolumeClaimSpec *half-sensitive*
   field_categories:
   - fields:
     - accessModes
@@ -601,7 +601,7 @@
     - dataSource
     - dataSourceRef
 
-- definition: io.k8s.api.core.v1.PersistentVolumeSpec
+- definition: io.k8s.api.core.v1.PersistentVolumeSpec *half-sensitive*
   field_categories:
   - fields:
     - accessModes
@@ -639,7 +639,7 @@
     - storageos
     - vsphereVolume
 
-- definition: io.k8s.api.rbac.v1.PolicyRule
+- definition: io.k8s.api.rbac.v1.PolicyRule *half-sensitive*
   field_categories:
   - fields:
     - apiGroups
