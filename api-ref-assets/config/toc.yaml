@@ -263,7 +263,7 @@ parts:
   - name: ObjectFieldSelector
     key: io.k8s.api.core.v1.ObjectFieldSelector
   - name: ObjectMeta
-    key: io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta
+    key: io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta *half-sensitive*
   - name: ObjectReference
     key: io.k8s.api.core.v1.ObjectReference
   - name: Patch

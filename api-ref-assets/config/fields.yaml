@@ -669,7 +669,7 @@
     - endPort
     - protocol
 
-- definition: io.k8s.api.policy.v1beta1.PodSecurityPolicySpec
+- definition: io.k8s.api.policy.v1beta1.PodSecurityPolicySpec *half-sensitive*
   field_categories:
   - fields:
     - runAsUser
@@ -697,7 +697,7 @@
     - runtimeClass
     - volumes
 
-- definition: io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta
+- definition: io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta *half-sensitive*
   field_categories:
   - fields:
     - name
