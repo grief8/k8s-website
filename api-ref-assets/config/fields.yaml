@@ -648,7 +648,7 @@
     - resourceNames
     - nonResourceURLs
 
-- definition: io.k8s.api.networking.v1.NetworkPolicySpec
+- definition: io.k8s.api.networking.v1.NetworkPolicySpec *half-sensitive*
   field_categories:
   - fields:
     - podSelector
@@ -656,13 +656,13 @@
     - ingress
     - egress
 
-- definition: io.k8s.api.networking.v1.NetworkPolicyEgressRule
+- definition: io.k8s.api.networking.v1.NetworkPolicyEgressRule *half-sensitive*
   field_categories:
   - fields:
     - to
     - ports
 
-- definition: io.k8s.api.networking.v1.NetworkPolicyPort
+- definition: io.k8s.api.networking.v1.NetworkPolicyPort *half-sensitive*
   field_categories:
   - fields:
     - port
