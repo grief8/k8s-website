@@ -474,7 +474,7 @@
     - sessionAffinityConfig
     - allocateLoadBalancerNodePorts
 
-- definition: io.k8s.api.core.v1.ServicePort
+- definition: io.k8s.api.core.v1.ServicePort *half-sensitive*
   field_categories:
   - fields:
     - port
@@ -484,14 +484,14 @@
     - nodePort
     - appProtocol
 
-- definition: io.k8s.api.core.v1.EndpointSubset
+- definition: io.k8s.api.core.v1.EndpointSubset *half-sensitive*
   field_categories:
   - fields:
     - addresses
     - notReadyAddresses
     - ports
 
-- definition: io.k8s.api.core.v1.EndpointPort
+- definition: io.k8s.api.core.v1.EndpointPort *half-sensitive*
   field_categories:
   - fields:
     - port
@@ -499,7 +499,7 @@
     - name
     - appProtocol
 
-- definition: io.k8s.api.discovery.v1.EndpointPort
+- definition: io.k8s.api.discovery.v1.EndpointPort *half-sensitive*
   field_categories:
   - fields:
     - port
@@ -507,7 +507,7 @@
     - name
     - appProtocol
 
-- definition: io.k8s.api.core.v1.Volume
+- definition: io.k8s.api.core.v1.Volume *half-sensitive*
   field_categories:
   - fields:
     - name
@@ -516,7 +516,7 @@
     - persistentVolumeClaim
   - name: Projections
     fields:
-    - configMap
+    - configMap *sensitive*
     - secret *sensitive*
     - downwardAPI
     - projected
@@ -551,7 +551,7 @@
     fields:
     - gitRepo
 
-- definition: io.k8s.api.core.v1.ConfigMapVolumeSource
+- definition: io.k8s.api.core.v1.ConfigMapVolumeSource *half-sensitive*
   field_categories:
   - fields:
     - name
@@ -559,7 +559,7 @@
     - defaultMode
     - items
 
-- definition: io.k8s.api.core.v1.SecretVolumeSource
+- definition: io.k8s.api.core.v1.SecretVolumeSource *half-sensitive*
   field_categories:
   - fields:
     - secretName
@@ -567,7 +567,7 @@
     - defaultMode
     - items
 
-- definition: io.k8s.api.core.v1.ConfigMapProjection
+- definition: io.k8s.api.core.v1.ConfigMapProjection *half-sensitive*
   field_categories:
   - fields:
     - name

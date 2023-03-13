@@ -109,7 +109,7 @@ parts:
     group: ""
     version: v1
   - name: Volume
-    key: io.k8s.api.core.v1.Volume
+    key: io.k8s.api.core.v1.Volume *half-sensitive*
     otherDefinitions:
     - DownwardAPIVolumeFile
     - KeyToPath
